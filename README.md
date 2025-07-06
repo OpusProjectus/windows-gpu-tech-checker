@@ -17,7 +17,7 @@ It's particularly useful for checking if a game is using DirectX 11, DirectX 12,
     * Run the script by typing `.\cgpuapi-win.v1.0.0.ps1` and pressing Enter.
 
 **Important:** 
-You will be able to enter a process of your choice (e.g., `ezquake`, `wow`, `bodycam`) by running [cgpuapi-win.v1.0.0.ps1](https://github.com/OpusProjectus/windows-gpu-tech-checker/edit/CMD/cgpuapi-win.v1.0.0.ps1).
+You will be able to enter a process of your choice (e.g., `ezquake`, `wow`, `bodycam`) by running [cgpuapi-win.v1.0.0.ps1](https://github.com/sparklineflux/windows-gpu-tech-checker/blob/CMD/cgpuapi-win.v1.0.0.ps1).
 Easiest way's simply reading the instructions from the prompt explaining and accepting input which allows you to run it, as-is, or by changing the default example variable are located directly within the ps1 script file itself. 
 
 **To do the latter** simply download and open the file in any text-edior. I recommend `notepad++`, `vim` or `aetherlink`, but notepad will do. Now adjust the settings as needed. 
