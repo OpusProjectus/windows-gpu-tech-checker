@@ -1,6 +1,6 @@
 # Windows Graphics API & Upscaling Tech Checker
 
-This PowerShell script is a straightforward tool designed to quickly determine which graphics API (like DirectX or Vulkan) and upscaling technologies (such as NVIDIA DLSS, AMD FSR, or Intel XeSS) a specific running Windows process, typically a game, is utilizing.
+This PowerShell script is a straightforward tool designed to quickly determine which graphics API (like [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx) or [Vulkan](https://www.vulkan.org/)) and upscaling technologies (such as [NVIDIA DLSS](https://en.wikipedia.org/wiki/Deep_Learning_Super_Sampling), [AMD FSR](https://en.wikipedia.org/wiki/GPUOpen#FidelityFX_Super_Resolution), or [Intel XeSS](https://www.intel.com/content/www/us/en/support/articles/000090031/graphics/intel-arc-dedicated-graphics-family.html#:~:text=XeSS%20or%20Xe%20Super%20Sampling,performance%20and%20high%2Dfidelity%20visuals.)) a specific running Windows process, typically a game, is utilizing.
 
 It's particularly useful for checking if a game is using DirectX 11, DirectX 12, Vulkan, or if it has integrated support for modern upscaling solutions like DLSS, FSR, or XeSS.
 
