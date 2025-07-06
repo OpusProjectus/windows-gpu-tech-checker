@@ -1,0 +1,24 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# PowerShell specific
+*.psd1
+*.psm1
+*.ps1xml
+*.psc1
+*.pster
+*.psrc
+*.pssc
+*.ps1.log
+*.ps1.bak
+*.ps1.old
+*.ps1.tmp
+*.ps1.orig
+*.ps1.rej
+*.ps1.patch
+*.ps1.diff
+*.ps1.swp
+*.ps1.swo
+*.vscode/
