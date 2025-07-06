@@ -6,7 +6,7 @@ It's particularly useful for checking if a game is using DirectX 11, DirectX 12,
 
 ## How to Use
 
-1.  **Save the script:** Save the provided PowerShell code as a `.ps1` file (e.g., `check_gpu_tech.ps1`).
+1.  **Save the script:** Save the provided PowerShell code as a `.ps1` file (e.g., `cgpuapi-win.v1.0.0.ps1`).
 
 2.  **Run as Administrator:** The script requires administrative privileges to inspect other running processes. Open PowerShell or Windows Terminal as an administrator.
 
@@ -14,9 +14,36 @@ It's particularly useful for checking if a game is using DirectX 11, DirectX 12,
 
     * Use the `cd` command to navigate to the directory where you saved the script.
 
-    * Run the script by typing `.\check_gpu_tech.ps1` and pressing Enter.
+    * Run the script by typing `.\cgpuapi-win.v1.0.0.ps1` and pressing Enter.
 
-**Important:** The target process name (e.g., "Bodycam-Win64-Shipping") and specific instructions for modifying it are located directly within the `check_gpu_tech.ps1` file itself as variables. Please open the script file to adjust these settings as needed.
+**Important:** 
+You will be able to enter a process of your choice (e.g., `ezquake`, `wow`, `bodycam`) by running [cgpuapi-win.v1.0.0.ps1](https://github.com/OpusProjectus/windows-gpu-tech-checker/edit/CMD/cgpuapi-win.v1.0.0.ps1).
+Easiest way's simply reading the instructions from the prompt explaining and accepting input which allows you to run it, as-is, or by changing the default example variable are located directly within the ps1 script file itself. 
+
+**To do the latter** simply download and open the file in any text-edior. I recommend `notepad++`, `vim` or `aetherlink`, but notepad will do. Now adjust the settings as needed. 
+
+**Remember that you risk making unwanted changes**; 
+I'm not recommending this method for users wholly new to writing or handling code!
+
+
+Below I've presented a example of my own interaction with the script, including the output (On a Windows 11 Pro with Powershell 7.5.2) while running [ezquake](https://nquake.com/) in the background.
+I didn't enter any input, it will use your userprofile folder `Documenets` as default and give the filename a date- and time reference in the filename.
+
+   Process 'ezquake' (ID: 372) found. Attempting to list modules...
+   Searching for relevant DLLs...
+   - Found DirectX DLL: d3d12.dll
+
+   --- Summary of Detected Technologies ---
+   [API] Likely DirectX.
+   [Upscaling] No AMD FSR found.
+   [Upscaling] No NVIDIA DLSS found.
+   [Upscaling] No Intel XeSS found.
+
+   Note: A loaded DLL indicates support, not necessarily active use.
+   Do you want to save a log of the results? (y/n): y
+   Enter log file path (default: C:\Users\opusprojectus\Documents\GPU_TechCheck_2025-07-06_20-31-46.log.txt)
+   Log file path: 
+   Save to 'C:\Users\opusprojectus\Documents\GPU_TechCheck_2025-07-06_20-31-46.log.txt'? (y/n): y
 
 ## What It Checks For
 
